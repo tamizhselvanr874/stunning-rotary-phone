@@ -1,0 +1,166 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>PromptFree</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  
+</head>  
+<body>  
+    <div class="app-container">  
+<div class="prompt-library">  
+    <!-- Nature and Landscapes -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="nature">  
+            <i class="fa-solid fa-tree" title="Nature and Landscapes"></i>  
+        </h3>  
+        <ul id="nature" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Forests">Forests</li>  
+            <li data-prompt-title="Mountains">Mountains</li>  
+            <li data-prompt-title="Beaches">Beaches</li>  
+        </ul>  
+    </div>  
+    <!-- Architecture -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="architecture">  
+            <i class="fa-solid fa-city" title="Architecture"></i>  
+        </h3>  
+        <ul id="architecture" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Futuristic Cities">Futuristic Cities</li>  
+            <li data-prompt-title="Monuments">Monuments</li>  
+            <li data-prompt-title="Fantasy Castles">Fantasy Castles</li>  
+        </ul>  
+    </div>  
+    <!-- Professional Product Photography -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="product-photography">  
+            <i class="fa-solid fa-camera" title="Professional Product Photography"></i>  
+        </h3>  
+        <ul id="product-photography" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Scotch Whiskey">Scotch Whiskey</li>  
+            <li data-prompt-title="Pea Powder">Pea Powder</li>  
+            <li data-prompt-title="Hot Cappuccino">Hot Cappuccino</li>  
+            <li data-prompt-title="Luxury Jewelry">Luxury Jewelry</li>  
+        </ul>  
+    </div>  
+    <!-- Realistic Human Portraits -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="human-portraits">  
+            <i class="fa-solid fa-user" title="Realistic Human Portraits"></i>  
+        </h3>  
+        <ul id="human-portraits" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Young Man in New York">Young Man in New York</li>  
+            <li data-prompt-title="Beautiful Woman on Busy Street">Beautiful Woman on Busy Street</li>  
+            <li data-prompt-title="Best Friends at Skatepark">Best Friends at Skatepark</li>  
+        </ul>  
+    </div>  
+    <!-- Logos and Brand Mascots -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="logos">  
+            <i class="fa-solid fa-pen-nib" title="Logos and Brand Mascots"></i>  
+        </h3>  
+        <ul id="logos" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Futuristic Worker Mascot">Futuristic Worker Mascot</li>  
+            <li data-prompt-title="Rustic Coffee Company Logo">Rustic Coffee Company Logo</li>  
+            <li data-prompt-title="Organic Skincare Brand Mascot">Organic Skincare Brand Mascot</li>  
+        </ul>  
+    </div>  
+    <!-- Lifestyle Stock Images of People -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="lifestyle-stock">  
+            <i class="fa-solid fa-heart" title="Lifestyle Stock Images of People"></i>  
+        </h3>  
+        <ul id="lifestyle-stock" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Couple on Beach">Couple on Beach</li>  
+            <li data-prompt-title="Intense Workout">Intense Workout</li>  
+        </ul>  
+    </div>  
+    <!-- Landscapes -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="landscapes">  
+            <i class="fa-solid fa-mountain" title="Landscapes"></i>  
+        </h3>  
+        <ul id="landscapes" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Tropical Rainforest">Tropical Rainforest</li>  
+            <li data-prompt-title="Australian Outback">Australian Outback</li>  
+            <li data-prompt-title="Thai Beach">Thai Beach</li>  
+        </ul>  
+    </div>  
+    <!-- Macro Photography -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="macro-photography">  
+            <i class="fa-solid fa-search-plus" title="Macro Photography"></i>  
+        </h3>  
+        <ul id="macro-photography" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Spider Web">Spider Web</li>  
+            <li data-prompt-title="Weathered Coin">Weathered Coin</li>  
+            <li data-prompt-title="Butterfly Wing">Butterfly Wing</li>  
+        </ul>  
+    </div>  
+    <!-- YouTube Thumbnails -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="youtube-thumbnails">  
+            <i class="fa-solid fa-video" title="YouTube Thumbnails"></i>  
+        </h3>  
+        <ul id="youtube-thumbnails" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Alex Hormozi Thumbnail">Alex Hormozi Thumbnail</li>  
+            <li data-prompt-title="iPhone Review Thumbnail">iPhone Review Thumbnail</li>  
+            <li data-prompt-title="Man with Monkeys Thumbnail">Man with Monkeys Thumbnail</li>  
+        </ul>  
+    </div>  
+    <!-- Oil Paintings -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="oil-paintings">  
+            <i class="fa-solid fa-brush" title="Oil Paintings"></i>  
+        </h3>  
+        <ul id="oil-paintings" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Serene Lakeside">Serene Lakeside</li>  
+            <li data-prompt-title="European Café">European Café</li>  
+            <li data-prompt-title="Autumn Forest">Autumn Forest</li>  
+        </ul>  
+    </div>  
+    <!-- Ultra Realistic Foods -->  
+    <div class="prompt-category">  
+        <h3 class="category-heading" data-category="ultra-realistic-foods">  
+            <i class="fa-solid fa-utensils" title="Ultra Realistic Foods"></i>  
+        </h3>  
+        <ul id="ultra-realistic-foods" class="prompt-list popover-menu" style="display: none;">  
+            <li data-prompt-title="Grilled Fish">Grilled Fish</li>  
+            <li data-prompt-title="Pavlova Dessert">Pavlova Dessert</li>  
+            <li data-prompt-title="Burgers">Burgers</li>  
+        </ul>  
+    </div>  
+    <!-- Add more categories as needed -->  
+</div>  
+        <div class="chat-interface">  
+            <div class="chat-header">  
+                <h1>PromptFree</h1>  
+            </div>  
+            <div class="chat-window" id="chat-window">  
+                <!-- Chat messages will appear here -->  
+            </div>  
+            <div class="input-area">  
+                <input type="text" id="user-input" placeholder="Type your message...">  
+                <label for="image-upload" class="image-upload-label">  
+                    <input type="file" id="image-upload" accept="image/*">  
+                    <i class="fa-solid fa-paperclip"></i>  
+                </label>  
+                <button id="send-button">  
+                    <i class="fa-solid fa-paper-plane"></i>  
+                </button>  
+            </div>  
+        </div>  
+    </div>  
+    <!-- Modal for enlarged image view -->  
+    <div id="image-modal" class="modal">  
+        <span class="close" onclick="closeModal()">&times;</span>  
+        <img class="modal-content" id="enlarged-img">  
+        <a id="download-link" download="generated-image.jpg">Download</a>  
+    </div>  
+    <script src="script.js"></script>  
+</body>  
+</html>  
